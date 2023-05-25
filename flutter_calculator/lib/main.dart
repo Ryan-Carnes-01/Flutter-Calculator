@@ -85,8 +85,9 @@ class MainAppState extends ChangeNotifier {
     }
     print('RESULT: $result');
     notifyListeners();
-
-    //reset stuff?
+    leftOperand = result;
+    operation = 0;
+    rightOperand = 0;
   }
 }
 
